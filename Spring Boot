@@ -1,0 +1,7 @@
+Spring stater project by default include following dependencies
+
+spring-boot-starter (compile)
+spring-boot-starter-test (test)
+
+In order to build rest micro service we have to add folllwing dependency
+spring-boot-starter-web(compile)
