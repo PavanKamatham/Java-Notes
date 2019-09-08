@@ -1,0 +1,21 @@
+lombok: It is a java library which automatically generated biolerplate byte code based on couple of annotations
+
+1. @Getter & @Setter:
+Avoid manually writing getter/setter methods in java classes.
+
+Declaring can happen @ two places
+
+@Getter
+@Setter
+public class Demo{
+private String name;
+private String number;
+}
+
+public class Demo{
+@Getter @Setter private String name;
+@Setter (AccessLevel.PROTECTED) private String number;
+}
+
+2.@EqualsAndHashCode: 
+Avoid manually writing equals(compare if 2 obejcts are equal) & hashcode (returns hashcode of an object) methods in java classes.
