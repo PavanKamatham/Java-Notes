@@ -1,0 +1,11 @@
+@Async will make it execute in a separate thread i.e. the caller will not wait for the completion of the called method.
+
+@Async has two limitations:
+it must be applied to public methods only
+self-invocation – calling the async method from within the same class – won't work
+
+The reasons are simple – the method needs to be public so that it can be proxied.
+And self-invocation doesn't work because it bypasses the proxy and calls the underlying method directly.
+
+Enabling asynchronous processing with Java configuration – by simply adding the @EnableAsync to a configuration class.
+@Async
