@@ -16,3 +16,32 @@ Verify the code
 Execute the code
 Provide runtime environment.
 
+Class Loader: Class loader is a subsystem of JVM. It is used to load class files.Whenever we run the java program, class loader loads 
+it first.
+Loading
+Linking
+Initialization
+
+Class method area: It is one of the Data Area in JVM, in which Class data will be stored. Static Variables, Static Blocks, Static Methods,
+Instance Methods are stored in this area.
+
+Heap: A heap is created when the JVM starts up. It may increase or decrease in size while the application runs.Information of all objects is stored in heap area
+
+Stack: JVM stack is known as a thread stack. It is a data area in the JVM memory which is created for a single execution thread.
+The JVM stack of a thread is used by the thread to store various elements i.e.; local variables, partial results, and data for 
+calling method and returns.
+
+PC Registers: This keeps the track of which instruction has been executed and which one is going to be executed. Since instructions are executed by threads, each thread has a separate PC register.
+
+Native Method stack: A native method can access the runtime data areas of the virtual machine.
+
+Native Method interface: It enables java code to call or be called by native applications. Native applications are programs that are specific to the hardware and OS of a system.
+
+Garbage collection: A class instance is explicitly created by the java code and after use it is automatically destroyed by garbage collection for memory management.
+
+JVM Vs JRE Vs JDK
+JRE: JRE is the environment within which the java virtual machine runs. JRE contains Java virtual Machine(JVM), class libraries, and other files excluding development tools such as compiler and debugger.
+Which means you can run the code in JRE but you can’t develop and compile the code in JRE.
+JVM: As we discussed above, JVM runs the program by using class, libraries and files provided by JRE.
+JDK: JDK is a superset of JRE, it contains everything that JRE has along with development tools such as compiler, debugger etc.
+
