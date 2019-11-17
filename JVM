@@ -1,0 +1,18 @@
+In Java there is a process of compliation and Interpretation.
+
+The code written in java is converted to Byte Code using JIT compiler.The Byte Code then converted to Machine Language using JVM.
+The machine code is executed direclty by the machine.
+In Java architecutre there are 3 components JVM,JRE and JDK.
+
+Java applications are called WORA becuase of thier ability to run a code on any platform.This is done only because of JVM. 
+
+JVM: JVM is a java platfrom componnent that provides an environment for executing java programs.JVM interprets the byte code into machine
+code which is executed in which java programs runs.
+
+JVM perfroms the following functions
+
+Load the code
+Verify the code
+Execute the code
+Provide runtime environment.
+
