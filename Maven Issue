@@ -1,0 +1,33 @@
+maven having issues with plugins download
+
+501 error HTTPS required.
+
+updated settings.xml with following information
+
+<profile>
+			<id>nexus-profile</id>
+
+			<repositories>
+				<repository>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+					<id>central</id>
+					<name>Central Repository</name>
+					<url>https://repo.maven.apache.org/maven2</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<releases>
+						<updatePolicy>never</updatePolicy>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+					<id>central</id>
+					<name>Central Repository</name>
+					<url>https://repo.maven.apache.org/maven2</url>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
